@@ -1,0 +1,40 @@
+<div class="news-header" *ngIf="!myNews && !author">
+    <div class="option section">
+        <label class="section-label">Section</label>
+        <select class="form-control centered" name="sectionId" (change)="changeSectionFilter(sect.value)" #sect>
+            <option class="form-control centered" [value]="0">All</option>
+            <option class="form-control centered"  *ngFor="let section of sections" [value]="section.id">
+                {{ section.title }}
+            </option>
+        </select>
+    </div>
+    <div class="option">
+        <label>Tags</label>
+        <mat-form-field appearance="fill">
+            <mat-label>Tags</mat-label>
+            <mat-select multiple (selectionChange)="changeTagFilter(tag.value)" #tag>
+              <mat-option *ngFor="let tag of tags" [value]="tag.id">{{ tag.title }}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+    <div class="option">
+        <label>Data range</label>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter a date range</mat-label>
+            <mat-date-range-input [rangePicker]="picker">
+              <input matStartDate placeholder="Start date" (dateInput)="changeDateFilter(dateStart.value, true)" #dateStart>
+              <input matEndDate placeholder="End date" (dateInput)="changeDateFilter(dateEnd.value, false)" #dateEnd>
+            </mat-date-range-input>
+            <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+            <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+    </div>
+</div>
+<div class="my-news" *ngIf="myNews">My News</div>
+<div class="my-news" *ngIf="author">All News from {{ author.userName }}</div>
+<div class="news-list">
+    <div class="news-list-item" *ngFor="let news of allNews">
+        <app-news-item [news]="news" [myNews]="myNews"></app-news-item>
+    </div>
+</div>

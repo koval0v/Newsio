@@ -1,0 +1,185 @@
+.page {
+    background-image: url("../../../../assets/background.png");
+    height: 660px;
+    margin-left: -15px;
+}
+
+.news-form-container {
+    margin-top: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.main-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    color: #2F47A5;
+    text-align: center;
+    margin-left: -30px;
+}
+
+.form-container {
+    padding: 10px 20px;
+    border: 2px solid #22272E;
+    border-radius: 25px;
+    width: 400px;
+    height: 220px;
+    margin-top: 5px;
+    color: #22272E;
+    padding-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.tags {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag {
+    padding: 5px 12px;
+    border-radius: 25px;
+    border: 2px solid #d3d3d3;
+    margin-right: 10px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.form-group label, .tags .label {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.form-control {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 2px solid #22272E;
+    border-radius: 10px;
+    padding: 3px 5px;
+}
+
+.errors-container {
+    min-height: 17px;
+    padding-top: 3px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.error {
+    color: red;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+input.ng-dirty.ng-invalid {
+    border-color: red;
+}
+
+.text {
+    height: 180px;
+    word-break: break-word;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: -10px;
+    margin-top: 50px;
+}
+
+.save-button, .cancel-button {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    width: 220px;
+    height: 40px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.save-button {
+    background-color: #2F47A5;
+    border: none;
+    color: #FFFFFF;
+    border: 2px solid #2F47A5;
+    cursor: pointer;
+}
+
+.save-button:disabled {
+    background-color: #D9D9D9;
+    border-color: #D9D9D9;
+    cursor: default;
+}
+
+.cancel-button {
+    border: none;
+    color: #2F47A5;
+    background: #FFFFFF;
+    border: 2px solid #2F47A5;
+    cursor: pointer;
+}
+
+.save-button {
+    margin-right: 30px;
+}
+
+.tags {
+    margin-top: -100px;
+    margin-left: 15px;
+}
+
+.tags .label {
+    margin-bottom: 10px;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info .left {
+    margin-right: 30px;
+}
+
+.non-checked {
+    opacity: 50%;
+}
+
+.non-checked:hover {
+    opacity: 100%;
+    cursor: pointer;
+}
+
+.password-change {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 35px;
+    color: #22272E;
+    width: 100%;
+    text-align: center;
+}
+
+.top {
+    margin-top: 20px;
+}

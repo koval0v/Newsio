@@ -1,0 +1,133 @@
+.news-item {
+    width: 90%;
+    margin-left: 40px;
+    height: 610px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    border: 2px solid #ededed;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.section {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.section-title {
+    background-color: #2F47A5;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.info-and-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-info {
+    padding: 15px 2px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    color: #2F47A5;
+    margin-top: 20px;
+}
+
+.description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    margin-top: 20px;
+    height: 330px;
+}
+
+.additional-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: left;
+    width: 600px;
+}
+
+.additional-item {
+    width: 200px;
+}
+
+.author {
+    width: 160px;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.item-value {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.more {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.more-btn {
+    background-color: #2F47A5;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #2F47A5;
+    margin-bottom: 10px;
+}
+
+.more-btn:hover {
+    background-color: white;
+    color: #2F47A5;
+    cursor: pointer;
+}
+
+.tag-values {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+.tag {
+    padding: 5px 12px;
+    border-radius: 25px;
+    border: 2px solid #d3d3d3;
+    margin-right: 10px;
+}
+
+.author-title {
+    margin-left: 990px;
+    background-color: white;
+    border: 2px solid #2F47A5;
+    color:#2F47A5;
+}
+
+.author-title:hover {
+    background-color:#2F47A5;
+    color:white;
+    cursor: pointer;
+}

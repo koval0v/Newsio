@@ -1,0 +1,23 @@
+<header>
+    <div class="logo-container">
+        <img class="logo" src="assets/news-logo.png" (click)="redirectToAllNews()"/>
+    </div>
+    <div class="avatar-container">
+        <div class="new" (click)="redirectToNewNews()">
+            + New
+        </div>
+        <ng-container *ngIf="currentUser">
+            <h4>{{ currentUser.userName }}</h4>
+            <div class="dropdown">
+                <img class="logo-arrow" src="assets/arrow-down.png" />
+                <div class="dropdown-content">
+                <p class="dropdown-item" (click)="redirectToMyNews()"><i class="fa-sharp fa-solid fa-envelope drop-icon"></i>My news</p>
+                <p class="dropdown-item" (click)="redirectToSettings()"><i class="fa-sharp fa-solid fa-gear drop-icon"></i>Settings</p>
+                <p class="dropdown-item" (click)="logOut()">
+                    <i class="fa-sharp fa-solid fa-right-from-bracket drop-icon"></i>Log out</p>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</header>
+

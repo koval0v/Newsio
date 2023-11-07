@@ -1,0 +1,36 @@
+<div class="news-item">
+    <div class="section">
+        <div class="section-title">{{ news.section.title }}</div>
+        <div class="section-title author-title" (click)="redirectToAuthorNews()">All from this author</div>
+    </div>
+    <div class="main-info">
+        <div class="title">{{ news.title }}</div>
+        <div class="description">{{ news.description }}</div>
+    </div>
+    <div class="info-and-tags">
+        <div class="additional-info">
+            <div class="additional-item">
+                <span class="item-name">Author:</span><br><span class="item-value"> {{ news.author.userName }}</span>
+             </div>
+             <div class="additional-item">
+                 <span class="item-name">Created at:</span><br><span class="item-value">
+                    {{ news.createdDate | date: 'MMMM d, y' }}</span>
+             </div>
+             <div class="additional-item">
+                 <span class="item-name">Updated at:</span><br><span class="item-value">
+                    {{ news.updatedDate | date: 'MMMM d, y' }}</span> 
+             </div>
+        </div>
+        <div class="tags">
+            <div class="additional-item">
+                <span class="item-name">Tags:</span><br>
+                <div class="tag-values">
+                    <div class="tag" *ngFor="let tag of news.tags">{{ tag.title }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more">
+        <div class="more-btn" (click)="redirectToAllNews()">Back</div>
+    </div>
+</div>

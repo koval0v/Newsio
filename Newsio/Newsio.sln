@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsio.DAL", "Newsio.DAL\Newsio.DAL.csproj", "{1D12C174-744B-48F7-9E89-7CB082876EB2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsio.BLL", "Newsio.BLL\Newsio.BLL.csproj", "{1D466176-E5AC-41AB-BCC3-7AC0D3735C63}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Newsio.PL", "Newsio.PL\Newsio.PL.csproj", "{2802E736-32E8-47FA-BCAE-C88DDE7C9E3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsio.DAL.Tests", "Newsio.DAL.Tests\Newsio.DAL.Tests.csproj", "{F854E8CF-DD2A-4AC7-ADA4-CAB11504F6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsio.BLL.Tests", "Newsio.BLL.Tests\Newsio.BLL.Tests.csproj", "{ECF2C9F5-741E-44E9-BA06-9C1D1F3E337B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Newsio.PL.Tests", "Newsio.PL.Tests\Newsio.PL.Tests.csproj", "{2542CDF0-01C0-43FC-A995-D70B4ADA1B98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D12C174-744B-48F7-9E89-7CB082876EB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D12C174-744B-48F7-9E89-7CB082876EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D12C174-744B-48F7-9E89-7CB082876EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D12C174-744B-48F7-9E89-7CB082876EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D466176-E5AC-41AB-BCC3-7AC0D3735C63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D466176-E5AC-41AB-BCC3-7AC0D3735C63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D466176-E5AC-41AB-BCC3-7AC0D3735C63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D466176-E5AC-41AB-BCC3-7AC0D3735C63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2802E736-32E8-47FA-BCAE-C88DDE7C9E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2802E736-32E8-47FA-BCAE-C88DDE7C9E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2802E736-32E8-47FA-BCAE-C88DDE7C9E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2802E736-32E8-47FA-BCAE-C88DDE7C9E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F854E8CF-DD2A-4AC7-ADA4-CAB11504F6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F854E8CF-DD2A-4AC7-ADA4-CAB11504F6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F854E8CF-DD2A-4AC7-ADA4-CAB11504F6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F854E8CF-DD2A-4AC7-ADA4-CAB11504F6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECF2C9F5-741E-44E9-BA06-9C1D1F3E337B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECF2C9F5-741E-44E9-BA06-9C1D1F3E337B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECF2C9F5-741E-44E9-BA06-9C1D1F3E337B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECF2C9F5-741E-44E9-BA06-9C1D1F3E337B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2542CDF0-01C0-43FC-A995-D70B4ADA1B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2542CDF0-01C0-43FC-A995-D70B4ADA1B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2542CDF0-01C0-43FC-A995-D70B4ADA1B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2542CDF0-01C0-43FC-A995-D70B4ADA1B98}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B231817-A001-42D8-A8EF-3A849AB9AD03}
+	EndGlobalSection
+EndGlobal

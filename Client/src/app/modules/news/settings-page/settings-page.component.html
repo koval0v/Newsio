@@ -1,0 +1,43 @@
+<div class="password-change">Change Password</div>
+<div class="news-form-container">
+        <div class="form">
+            <div class="form-container">
+                    <form #settingsForm="ngForm">
+                    <div class="form">
+                        <div class="form-group top">
+                            <label>Previous password</label>
+                            <input type="password" class="form-control" name="previousPassword"
+                            [(ngModel)]="passwordData.previousPassword" required
+                            #previousPassword="ngModel" placeholder="Enter previous password" />
+                        </div>
+                        <div class="errors-container">
+                            <div *ngIf="previousPassword.errors?.['required']" class="error">
+                                Previous password is required.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>New password</label>
+                            <input type="password" class="form-control" name="newPassword"
+                            [(ngModel)]="passwordData.newPassword" required
+                            #newPassword="ngModel" placeholder="Enter password" />
+                        </div>
+                        <div class="errors-container">
+                            <div *ngIf="newPassword.errors?.['required']" class="error">
+                                New password is required.
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="buttons">
+                <div class="form-group save-btn">
+                    <button [disabled]="settingsForm.invalid" 
+                            class="save-button" (click)="submit(settingsForm)">Change</button>
+                </div>
+                <div class="form-group cancel-btn">
+                    <button class="cancel-button" (click)="redirectToAllNews()">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>

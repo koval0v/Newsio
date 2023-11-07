@@ -1,0 +1,105 @@
+.news-item {
+    width: 100%;
+    height: 300px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    padding: 15px 30px 15px 30px;
+    border: 2px solid #ededed;
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+.section {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.section-title {
+    background-color: #2F47A5;
+    padding: 5px 15px;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.main-info {
+    padding: 15px 2px;
+}
+
+.title {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 55px;
+    color: #2F47A5;
+}
+
+.description {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.item-value {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.more {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.more-btn {
+    background-color: #2F47A5;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #2F47A5;
+    margin-bottom: 10px;
+    width: 100px;
+}
+
+.more-btn:hover {
+    background-color: white;
+    color: #2F47A5;
+    cursor: pointer;
+}
+
+.icon {
+    color: #22272E;
+    min-height: 20px;
+    min-width: 20px;
+    margin-top: 10px;
+}
+
+.icon:hover {
+    color: #2F47A5;
+    cursor: pointer;
+}
+
+.edit-icon {
+    margin-left: 230px;
+}
+
+.delete-icon {
+    margin-left: 25px;
+}

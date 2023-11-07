@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="news-form-container">
+    <div class="form">
+        <div class="main-info">
+            <ng-container *ngIf="isEditRoute(); else create">
+                <div class="label">
+                    EDIT NEWS
+                </div>
+            </ng-container>
+            <ng-template #create>
+                <div class="label">
+                    CREATE NEWS
+                </div>
+            </ng-template>
+        </div>
+        <div class="form-container">
+                <form #createNewsForm="ngForm">
+                <div class="form">
+                    <div class="form-group">
+                        <label>Title</label>
+                        <input class="form-control" name="title" [(ngModel)]="news.title" required maxlength="100"
+                        #title="ngModel" placeholder="Enter title"/>
+                    </div>
+                    <div class="errors-container">
+                        <div *ngIf="title.errors?.['required']" class="error">
+                            Title is required.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Text</label>
+                        <textarea class="form-control text" name="description" [(ngModel)]="news.description" required
+                        maxlength="500" #description="ngModel" placeholder="Enter description"></textarea>
+                    </div>
+                    <div class="errors-container">
+                        <div *ngIf="description.errors?.['required']" class="error">
+                            Description is required.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Section</label>
+                        <select class="form-control centered" name="sectionId" [(ngModel)]="news.sectionId" required>
+                            <option class="form-control centered"  *ngFor="let section of sections" [value]="section.id">
+                                {{ section.title }}
+                            </option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="buttons">
+            <div class="form-group save-btn">
+                <button [disabled]="createNewsForm.invalid" 
+                        class="save-button" (click)="submit(createNewsForm)">Save</button>
+            </div>
+            <div class="form-group cancel-btn">
+                <button class="cancel-button" (click)="redirectToAllNews()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <div class="tags">
+        <div class="label">
+            CHOOSE TAGS
+        </div>
+        <div class="tag" *ngFor="let tag of tags" [ngStyle]="getTagStyle(tag)"
+            (click)="addTagForNews(tag)">{{ tag.title }}</div>
+    </div>
+</div>

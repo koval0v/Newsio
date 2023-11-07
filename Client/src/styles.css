@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+h1, h2, h3, h4, h5 {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+h5 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+h2 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 77px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+
+snack-bar-container {
+    color: white;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 600;
+}
+
+.error-snack-bar {
+    background: #b4162b;
+    color: #22272E;
+}
+
+.success-snack-bar {
+    background: #1bb85f;
+    color: #22272E;
+}
+
+::-webkit-scrollbar-track {
+    background: #D9D9D9;
+    border-radius: 50px;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #22272E;
+    border-radius: 50px;
+}

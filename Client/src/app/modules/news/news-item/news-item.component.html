@@ -1,0 +1,25 @@
+<div class="news-item">
+    <div class="section">
+        <div class="section-title">{{ news.section.title }}</div>
+    </div>
+    <div class="main-info">
+        <div class="title">{{ news.title }}</div>
+        <div class="description">{{ news.description }}</div>
+    </div>
+    <div class="additional-info">
+        <div class="additional-item">
+           <span class="item-name">Author:</span><span class="item-value"> {{ news.author.userName }}</span>
+        </div>
+        <div class="additional-item">
+            <span class="item-name">Created at:</span><span class="item-value"> {{ news.createdDate | date: 'MMMM d, y' }}</span>
+        </div>
+        <div class="additional-item">
+            <span class="item-name">Updated at:</span><span class="item-value"> {{ news.updatedDate | date: 'MMMM d, y' }}</span> 
+        </div>
+    </div>
+    <div class="more">
+        <div class="more-btn" (click)="redirectToMore(news.id)">More</div>
+        <div *ngIf="myNews" class="edit-icon icon" (click)="redirectToEdit(news.id)"><i class="fa-sharp fa-solid fa-pen"></i></div>
+        <div *ngIf="myNews" class="delete-icon icon" (click)="deleteNews(news.id)"><i class="fa-sharp fa-solid fa-xmark"></i></div>
+    </div>
+</div>
